@@ -40,7 +40,7 @@ static Square orient(Color color, Square sq)
         // IMPORTANT: for now we use rotate180 instead of rank flip
         //            for compatibility with the stockfish master branch.
         //            Note that this is inconsistent with nodchip/master.
-        return sq.flippedVertically().flippedHorizontally();
+        return sq;
     }
 }
 
@@ -52,7 +52,7 @@ static Square orient_flip(Color color, Square sq)
     }
     else
     {
-        return sq.flippedVertically();
+        return sq;
     }
 }
 

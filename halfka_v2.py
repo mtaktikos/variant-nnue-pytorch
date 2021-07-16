@@ -12,7 +12,7 @@ NUM_PLANES_VIRTUAL = NUM_SQ * NUM_PT_VIRTUAL
 NUM_INPUTS = NUM_PLANES_REAL * NUM_SQ
 
 def orient(is_white_pov: bool, sq: int):
-  return (56 * (not is_white_pov)) ^ sq
+  return sq
 
 def halfka_idx(is_white_pov: bool, king_sq: int, sq: int, p: chess.Piece):
   p_idx = (p.piece_type - 1) * 2 + (p.color != is_white_pov)
